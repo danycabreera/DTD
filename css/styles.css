@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* O la fuente que uses para tu NAV */
+    background-color: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco para mejor contraste */
+    overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+}
+
+.slider {
+    position: relative;
+    width: 100%; /* Asegurarse de que el slider use todo el ancho */
+    height: 70vh; /* Altura aumentada al 70% */
+    margin: 0; /* Sin margen para evitar bordes */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Para permitir que se desplace entre los slides */
+    height: 100%; /* Altura completa */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.slide {
+    width: 100vw; /* Cada slide ocupa todo el ancho de la ventana */
+    height: 100%; /* Cada slide ocupa toda la altura */
+}
+
+.slide img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 100%; /* La imagen ocupa toda la altura */
+    object-fit: cover; /* Mantener proporción de la imagen */
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a1a; /* Fondo oscuro para el pie de página */
+    color: white; /* Texto blanco en el pie de página */
+}
+
+footer p {
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo del NAV (con espacio ajustado) */
+nav {
+    background-color: #1a1a1a; /* Fondo oscuro para el nav */
+    padding: 10px 0; /* Espacio ajustado en el nav */
+}
+
+nav ul {
+    list-style-type: none; /* Sin puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para los enlaces */
+    justify-content: center; /* Centrar elementos */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
